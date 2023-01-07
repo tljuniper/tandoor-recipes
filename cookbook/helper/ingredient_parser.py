@@ -18,7 +18,7 @@ class IngredientParser:
         Initialize ingredient parser
         :param request: request context (to control caching, rule ownership, etc.)
         :param cache_mode: defines if all rules should be loaded on initialization (good when parser is used many times) or if they should be retrieved every time (good when parser is not used many times in a row)
-        :param ignore_automations: ignore automation rules, allows to use ingredient parser without database access/request (request can be None)
+        :param ignore_automations: ignore automation rules. When cache_mode is false, this allows to use ingredient parser without database access/request (request can be None)
         """
         self.request = request
         self.ignore_rules = ignore_automations
@@ -116,7 +116,7 @@ class IngredientParser:
         else:
             frac_split = x.split('/')
             if not len(frac_split) == 2:
-                raise ValueError
+                raise ValueError(f"Expected len(frac_split) == 2, but got {len(frac_split)} in '{frac_split}'")
             try:
                 return int(frac_split[0]) / int(frac_split[1])
             except ZeroDivisionError:
