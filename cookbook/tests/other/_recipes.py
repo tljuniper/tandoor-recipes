@@ -1001,6 +1001,84 @@ COOKS_COUNTRY = {
 
 }
 
+CUISINE_SIMPLE = {
+    'file': ['cuisine_simple.tex'],
+    "url": "",
+    "name": "Yorkshire Pudding",
+    "internal": True,
+    "servings": 4,
+    "servings_text": "portions",
+    "working_time": 90.0,
+    "waiting_time": 0,
+    "image": "",
+    "source_url": "",
+    "keywords": [
+    ],
+    "steps": [
+        {
+            "instruction": "",
+            "ingredients": [
+                {
+                    "amount": 0.5,
+                    "food": {
+                        "name": "milk"
+                    },
+                    "unit": {
+                        "name": "pt"
+                    },
+                    "note": "",
+                    "original_text": ""
+                },
+                {
+                    "amount": 2,
+                    "food": {
+                        "name": "butter"
+                    },
+                    "unit": {
+                        "name": "oz"
+                    },
+                    "note": "",
+                    "original_text": ""
+                },
+                {
+                    "amount": 5,
+                    "food": {
+                        "name": "self-raising flour"
+                    },
+                    "unit": {
+                        "name": "oz"
+                    },
+                    "note": "",
+                    "original_text": ""
+                },
+                {
+                    "amount": 3,
+                    "food": {
+                        "name": "eggs"
+                    },
+                    "unit": {
+                        "name": ""
+                    },
+                    "note": "",
+                    "original_text": ""
+                },
+                {
+                    "amount": 0,
+                    "food": {
+                        "name": "salt and pepper"
+                    },
+                    "unit": {
+                        "name": ""
+                    },
+                    "note": "",
+                    "original_text": ""
+                }
+            ]
+        }
+    ],
+    "description": ""
+}
+
 DELISH = {
     'file': ['delish.html'],
     "url": "https://www.delish.com/cooking/recipe-ideas/recipes/a52405/cheesy-baked-asparagus-recipe/",
