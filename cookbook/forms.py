@@ -155,6 +155,7 @@ class ImportExportBase(forms.Form):
     COPYMETHAT = 'COPYMETHAT'
     COOKMATE = 'COOKMATE'
     PDF = 'PDF'
+    CUISINE = 'CUISINE'
 
     type = forms.ChoiceField(choices=(
         (DEFAULT, _('Default')), (PAPRIKA, 'Paprika'), (NEXTCLOUD, 'Nextcloud Cookbook'),
@@ -162,7 +163,7 @@ class ImportExportBase(forms.Form):
         (PEPPERPLATE, 'Pepperplate'), (RECETTETEK, 'RecetteTek'), (RECIPESAGE, 'Recipe Sage'), (DOMESTICA, 'Domestica'),
         (MEALMASTER, 'MealMaster'), (REZKONV, 'RezKonv'), (OPENEATS, 'Openeats'), (RECIPEKEEPER, 'Recipe Keeper'),
         (PLANTOEAT, 'Plantoeat'), (COOKBOOKAPP, 'CookBookApp'), (COPYMETHAT, 'CopyMeThat'), (PDF, 'PDF'), (MELARECIPES, 'Melarecipes'),
-        (COOKMATE, 'Cookmate')
+        (COOKMATE, 'Cookmate'), (CUISINE, 'LaTeX cuisine')
     ))
 
 

@@ -17,6 +17,7 @@ from cookbook.integration.chowdown import Chowdown
 from cookbook.integration.cookbookapp import CookBookApp
 from cookbook.integration.cookmate import Cookmate
 from cookbook.integration.copymethat import CopyMeThat
+from cookbook.integration.cuisine import Cuisine
 from cookbook.integration.default import Default
 from cookbook.integration.domestica import Domestica
 from cookbook.integration.mealie import Mealie
@@ -80,6 +81,8 @@ def get_integration(request, export_type):
         return MelaRecipes(request, export_type)
     if export_type == ImportExportBase.COOKMATE:
         return Cookmate(request, export_type)
+    if export_type == ImportExportBase.CUISINE:
+        return Cuisine(request, export_type)
 
 
 @group_required('user')

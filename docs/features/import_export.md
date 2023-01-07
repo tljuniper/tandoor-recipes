@@ -40,6 +40,7 @@ Overview of the capabilities of the different integrations.
 | CopyMeThat         | ✔️      | ❌  |  ✔️     |
 | Melarecipes         | ✔️      | ⌚  |  ✔️     |
 | Cookmate         | ✔️      | ⌚  |  ✔️     |
+| LaTeX cuisine      | ✔️      | ❌  |  ❌     |
 | PDF (experimental) | ⌚️      | ✔️  |  ✔️     |
 
 ✔️ = implemented, ❌ = not implemented and not possible/planned, ⌚ = not yet implemented
